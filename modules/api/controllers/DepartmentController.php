@@ -10,6 +10,9 @@ use yii\rest\ActiveController;
 class DepartmentController extends ActiveController
 {
     public $modelClass = 'app\models\Department';
+    public $serializer = [
+        'class' => 'yii\rest\Serializer',
+    ];
 
     public function actionParents($id)
     {
