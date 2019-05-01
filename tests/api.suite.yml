@@ -1,0 +1,6 @@
+class_name: ApiTester
+modules:
+  enabled:
+    - REST:
+        url: http://p1.com/api
+        depends: PhpBrowser
